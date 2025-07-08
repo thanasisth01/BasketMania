@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    tools:context=".R9_Main">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        tools:context=".SecondFragment"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="-37dp">
+
+        <ImageView
+            android:id="@+id/playerImagee"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/esake_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/teamMenu"
+            android:layout_width="206dp"
+            android:layout_height="58dp"
+            android:paddingLeft="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toStartOf="@+id/playerMenu"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTeamR9" />
+
+        <Spinner
+            android:id="@+id/playerMenu"
+            android:layout_width="206dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="36dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerImagee" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerMenu"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/positionT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/positionTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/positionV"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/off_reboundsT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/off_rebsTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/attemptedftT"
+                    app:layout_constraintStart_toStartOf="@+id/attemptedftT"
+                    app:layout_constraintTop_toBottomOf="@+id/attemptedftT" />
+
+                <TextView
+                    android:id="@+id/off_reboundsV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/attemptedftV"
+                    app:layout_constraintStart_toStartOf="@+id/attemptedftV"
+                    app:layout_constraintTop_toBottomOf="@+id/attemptedftV" />
+
+                <TextView
+                    android:id="@+id/attemptedftV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/madeFtV"
+                    app:layout_constraintStart_toStartOf="@+id/madeFtV"
+                    app:layout_constraintTop_toBottomOf="@+id/madeFtV" />
+
+                <TextView
+                    android:id="@+id/attemptedftT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/attemptedftTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/madeftT"
+                    app:layout_constraintStart_toStartOf="@+id/madeftT"
+                    app:layout_constraintTop_toBottomOf="@+id/madeftT" />
+
+                <TextView
+                    android:id="@+id/madeFtV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/attempted3pV"
+                    app:layout_constraintStart_toStartOf="@+id/attempted3pV"
+                    app:layout_constraintTop_toBottomOf="@+id/attempted3pV" />
+
+                <TextView
+                    android:id="@+id/madeftT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/madeftTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/attempted3pT"
+                    app:layout_constraintStart_toStartOf="@+id/attempted3pT"
+                    app:layout_constraintTop_toBottomOf="@+id/attempted3pT" />
+
+                <TextView
+                    android:id="@+id/attempted3pV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/made3pV"
+                    app:layout_constraintStart_toStartOf="@+id/made3pV"
+                    app:layout_constraintTop_toBottomOf="@+id/made3pV" />
+
+                <TextView
+                    android:id="@+id/attempted3pT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/attempted3pTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/made3pT"
+                    app:layout_constraintStart_toStartOf="@+id/made3pT"
+                    app:layout_constraintTop_toBottomOf="@+id/made3pT" />
+
+                <TextView
+                    android:id="@+id/made3pV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/attempted2pV"
+                    app:layout_constraintStart_toStartOf="@+id/attempted2pV"
+                    app:layout_constraintTop_toBottomOf="@+id/attempted2pV" />
+
+                <TextView
+                    android:id="@+id/made3pT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/made3pTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/attempted2pT"
+                    app:layout_constraintStart_toStartOf="@+id/attempted2pT"
+                    app:layout_constraintTop_toBottomOf="@+id/attempted2pT" />
+
+                <TextView
+                    android:id="@+id/attempted2pV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/made2pV"
+                    app:layout_constraintStart_toStartOf="@+id/made2pV"
+                    app:layout_constraintTop_toBottomOf="@+id/made2pV" />
+
+                <TextView
+                    android:id="@+id/attempted2pT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/attempted2pTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/made2pT"
+                    app:layout_constraintStart_toStartOf="@+id/made2pT"
+                    app:layout_constraintTop_toBottomOf="@+id/made2pT" />
+
+                <TextView
+                    android:id="@+id/made2pV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/pointsV"
+                    app:layout_constraintStart_toStartOf="@+id/pointsV"
+                    app:layout_constraintTop_toBottomOf="@+id/pointsV" />
+
+                <TextView
+                    android:id="@+id/made2pT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/made2pTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/pointsT"
+                    app:layout_constraintStart_toStartOf="@+id/pointsT"
+                    app:layout_constraintTop_toBottomOf="@+id/pointsT" />
+
+                <TextView
+                    android:id="@+id/pointsV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/total_timeV"
+                    app:layout_constraintStart_toStartOf="@+id/total_timeV"
+                    app:layout_constraintTop_toBottomOf="@+id/total_timeV" />
+
+                <TextView
+                    android:id="@+id/pointsT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/pointsTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/total_timeT"
+                    app:layout_constraintStart_toStartOf="@+id/total_timeT"
+                    app:layout_constraintTop_toBottomOf="@+id/total_timeT" />
+
+                <TextView
+                    android:id="@+id/total_timeV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/games_playedV"
+                    app:layout_constraintStart_toStartOf="@+id/games_playedV"
+                    app:layout_constraintTop_toBottomOf="@+id/games_playedV" />
+
+                <TextView
+                    android:id="@+id/games_playedT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/games_playedTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/positionT"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/positionT"
+                    app:layout_constraintTop_toBottomOf="@+id/positionT" />
+
+                <TextView
+                    android:id="@+id/games_playedV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/positionV"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/positionV"
+                    app:layout_constraintTop_toBottomOf="@+id/positionV" />
+
+                <TextView
+                    android:id="@+id/total_timeT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/total_timeTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/games_playedT"
+                    app:layout_constraintStart_toStartOf="@+id/games_playedT"
+                    app:layout_constraintTop_toBottomOf="@+id/games_playedT" />
+
+                <TextView
+                    android:id="@+id/positionV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.842"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/stealsV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/blocks_onV"
+                    app:layout_constraintStart_toStartOf="@+id/blocks_onV"
+                    app:layout_constraintTop_toBottomOf="@+id/blocks_onV" />
+
+                <TextView
+                    android:id="@+id/blocks_onV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/blocksV"
+                    app:layout_constraintStart_toStartOf="@+id/blocksV"
+                    app:layout_constraintTop_toBottomOf="@+id/blocksV" />
+
+                <TextView
+                    android:id="@+id/blocksT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/blocksTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/assistsT"
+                    app:layout_constraintStart_toStartOf="@+id/assistsT"
+                    app:layout_constraintTop_toBottomOf="@+id/assistsT" />
+
+                <TextView
+                    android:id="@+id/blocks_onT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/blocks_onTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/blocksT"
+                    app:layout_constraintStart_toStartOf="@+id/blocksT"
+                    app:layout_constraintTop_toBottomOf="@+id/blocksT" />
+
+                <TextView
+                    android:id="@+id/blocksV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/assistsV"
+                    app:layout_constraintStart_toStartOf="@+id/assistsV"
+                    app:layout_constraintTop_toBottomOf="@+id/assistsV" />
+
+                <TextView
+                    android:id="@+id/fouls_commitedV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/fouls_drawnV"
+                    app:layout_constraintStart_toStartOf="@+id/fouls_drawnV"
+                    app:layout_constraintTop_toBottomOf="@+id/fouls_drawnV" />
+
+                <TextView
+                    android:id="@+id/fouls_drawnT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/fouls_drawnTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/turnoversT"
+                    app:layout_constraintStart_toStartOf="@+id/turnoversT"
+                    app:layout_constraintTop_toBottomOf="@+id/turnoversT" />
+
+                <TextView
+                    android:id="@+id/turnoversV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/stealsV"
+                    app:layout_constraintStart_toStartOf="@+id/stealsV"
+                    app:layout_constraintTop_toBottomOf="@+id/stealsV" />
+
+                <TextView
+                    android:id="@+id/fouls_drawnV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/turnoversV"
+                    app:layout_constraintStart_toStartOf="@+id/turnoversV"
+                    app:layout_constraintTop_toBottomOf="@+id/turnoversV" />
+
+                <TextView
+                    android:id="@+id/turnoversT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/turnoversTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/stealsT"
+                    app:layout_constraintStart_toStartOf="@+id/stealsT"
+                    app:layout_constraintTop_toBottomOf="@+id/stealsT" />
+
+                <TextView
+                    android:id="@+id/stealsT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/stealsTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/blocks_onT"
+                    app:layout_constraintStart_toStartOf="@+id/blocks_onT"
+                    app:layout_constraintTop_toBottomOf="@+id/blocks_onT" />
+
+                <TextView
+                    android:id="@+id/assistsT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/assistTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/def_reboundsT"
+                    app:layout_constraintStart_toStartOf="@+id/def_reboundsT"
+                    app:layout_constraintTop_toBottomOf="@+id/def_reboundsT" />
+
+                <TextView
+                    android:id="@+id/assistsV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/def_reboundsV"
+                    app:layout_constraintStart_toStartOf="@+id/def_reboundsV"
+                    app:layout_constraintTop_toBottomOf="@+id/def_reboundsV" />
+
+                <TextView
+                    android:id="@+id/def_reboundsV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/off_reboundsV"
+                    app:layout_constraintStart_toStartOf="@+id/off_reboundsV"
+                    app:layout_constraintTop_toBottomOf="@+id/off_reboundsV" />
+
+                <TextView
+                    android:id="@+id/def_reboundsT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/def_rebsTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/off_reboundsT"
+                    app:layout_constraintStart_toStartOf="@+id/off_reboundsT"
+                    app:layout_constraintTop_toBottomOf="@+id/off_reboundsT" />
+
+                <TextView
+                    android:id="@+id/tendexV"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="28dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/fouls_commitedV"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/fouls_commitedV"
+                    app:layout_constraintTop_toBottomOf="@+id/fouls_commitedV"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/fouls_commitedT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/fouls_commitedTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="@+id/fouls_drawnT"
+                    app:layout_constraintStart_toStartOf="@+id/fouls_drawnT"
+                    app:layout_constraintTop_toBottomOf="@+id/fouls_drawnT" />
+
+                <TextView
+                    android:id="@+id/tendexT"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="28dp"
+                    android:background="#1580BA"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/tendexTxt"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/fouls_commitedT"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/fouls_commitedT"
+                    app:layout_constraintTop_toBottomOf="@+id/fouls_commitedT"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="20dp" />
+
+                <Button
+                    android:id="@+id/buttonBackR9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:backgroundTint="@color/background_color"
+                    android:text="Back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tendexT" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/txtTeamR9"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/teamtxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerImagee" />
+
+        <TextView
+            android:id="@+id/txtPlayerR9"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/playertxtr9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/playerImagee" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityR2_R3">
+
+    <Button
+        android:id="@+id/finished_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="Finish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fouls"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Spinner
+        android:id="@+id/team_menu_spinner"
+        android:layout_width="224dp"
+        android:layout_height="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <Spinner
+        android:id="@+id/player_menu_spinner"
+        android:layout_width="199dp"
+        android:layout_height="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_menu_spinner"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/attempted_point_1"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Attempted Point 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_menu_spinner"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/made_point_1"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Made Point 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/attempted_point_1"
+        app:layout_constraintTop_toBottomOf="@+id/player_menu_spinner"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/attempted_points_2"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Attempted Points 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attempted_point_1"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/made_points_2"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Made Points 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/attempted_points_2"
+        app:layout_constraintTop_toBottomOf="@+id/made_point_1"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/attempted_points_3"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="@color/background_color"
+        android:text="Attempted Points 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attempted_points_2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/made_points_3"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Made Points 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/attempted_points_3"
+        app:layout_constraintTop_toBottomOf="@+id/made_points_2"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <Button
+        android:id="@+id/off_rebounds"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Off Rebounds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attempted_points_3"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/def_rebounds"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Def Rebounds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/off_rebounds"
+        app:layout_constraintTop_toBottomOf="@+id/made_points_3"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/blocks"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Blocks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/off_rebounds"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/blocks_on"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Blocks On"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/blocks"
+        app:layout_constraintTop_toBottomOf="@+id/def_rebounds"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <Button
+        android:id="@+id/turnovers"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Turnovers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/steals"
+        app:layout_constraintTop_toBottomOf="@+id/blocks_on"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <Button
+        android:id="@+id/steals"
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Steals"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blocks"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <Button
+        android:id="@+id/assists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Assists"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/steals"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Button
+        android:id="@+id/fouls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/background_color"
+        android:text="Fouls"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toEndOf="@+id/assists"
+        app:layout_constraintTop_toBottomOf="@+id/turnovers"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Spinner
+        android:id="@+id/opponent_menu_spinner"
+        android:layout_width="172dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fouls"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/assists"
+        app:layout_constraintTop_toBottomOf="@+id/player_menu_spinner"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <Button
+        android:id="@+id/buttonBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_grey"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assists"
+        app:layout_constraintVertical_bias="0.333" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
