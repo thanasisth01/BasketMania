@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap'); /* Ubuntu Condensed, h1 font-family */
+
+body {
+    
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: black;
+    text-align: center;
+    text-decoration: rgb(25, 0, 255) underline;
+    text-underline-offset: 5px;
+}
+
+h3 {
+    left: 10px;
+    font-family: 'Ubuntu Condensed', sans-serif; 
+    text-align: center;
+    color: black;
+    text-decoration: black underline;
+}
+
+div {
+
+    text-align: center;
+}
+
+a {
+    font-family: 'Ubuntu Condensed', sans-serif; 
+    
+    text-decoration: none;
+    font-size: larger;
+    border: solid 2px rgb(25, 0, 255);
+    border-radius: 10px;
+    color: black;
+
+    width: 250px;
+    height: 45px;
+
+    padding: 0px 5px;
+}
+
+a:hover {
+    background-color: rgb(25, 0, 255);
+    color: white;
+    transition: 0.5s;
+}
+
+p {
+    text-align: center;
+    font-family: 'Ubuntu Condensed', sans-serif; 
+}
+
+form {
+
+    font-family: 'Ubuntu Condensed', sans-serif;
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-rows: 1fr 15px 1fr 15px 15px 1fr 1fr 15px 15px 1fr 1fr 15px 1fr;
+    grid-row-gap: 10px;
+}
+
+input {
+
+    display: block;
+    color: black;
+    background-color: white;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: large;
+    text-align: center;
+
+    border: solid 2px rgb(25, 0, 255);
+    border-radius: 10px;
+
+    width: 250px;
+    height: 45px;
+
+    padding: 0px 5px;
+}
+
+input:focus, textarea:focus{
+
+    outline: none;
+
+    border: solid rgb(142, 130, 250) 2px;
+    color: black;
+    transition: 0.5s;
+}
+
+span {
+    display: inline-block;
+
+    color: rgb(25, 0, 255);
+    text-decoration: underline 2px black;
+    font-size: 15px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#submit_button {
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: x-large;
+    color: rgb(25, 0, 255);
+    background-color: rgba(128, 128, 128, 0.319);
+
+    cursor: pointer;
+}
+
+#submit_button:hover {
+    background-color: rgb(25, 0, 255);
+    color: white;
+
+    transition: 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+table {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: rgb(25, 0, 255);
+    font-size: large;
+    
+    width: 180px;
+
+    text-align: center;
+    text-decoration: underline black 2px;
+    text-transform: uppercase;
+}
+
+td {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: black;
+    text-align: center;
+    border-left: rgb(25, 0, 255) solid 1px;
+    border-right: rgb(25, 0, 255) solid 1px;
+}
